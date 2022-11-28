@@ -4,8 +4,8 @@ pipeline {
     myenv1="dev"
   }
   parameters {
-  string defaultValue: 'dev', description: 'dev environment', name: 'Environment', trim: false
-  choice choices: ['linux', 'hp-ux', 'solaris'], description: '', name: 'ostype'
+  string defaultValue: 'dev', description: 'pt', name: 'platform', trim: false
+  choice choices: ['linux', 'hp-ux', 'solaris', 'centos', 'red-hat'], description: 'select any one', name: 'ostype'
 }
 
   stages {
