@@ -18,7 +18,7 @@ pipeline {
           //printing global variables
           println "Printing build id ${env.BUILD_ID}"
           // printing parameters values
-          println "my environment parameter is ${params.Environment}"
+          println "my environment parameter is ${params.platform}"
           println "my selected ostype is ${params.ostype}"
         }
       }
